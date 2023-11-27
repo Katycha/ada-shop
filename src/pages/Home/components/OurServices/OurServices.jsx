@@ -2,7 +2,7 @@ import "./ourservices.css";
 import { Truck, Banknote, LockKeyhole, Phone } from "lucide-react";
 function OurServices() {
   return (
-    <div className="lg:mx-[160px] flex flex-wrap items-stretch justify-center gap-x-2 gap-y-6">
+    <div className=" container mx-auto px-8 flex flex-wrap items-stretch justify-center gap-x-2 gap-y-6">
       <div className="card px-4 py-8 m-1 justify-center flex-1 bg-[#F3F5F7]  ">
         <Truck className="justify-center" />
         <h4 className="">Free Shipping</h4>
