@@ -5,12 +5,14 @@ import Footer from "../../components/Footer/Footer";
 import Products from "./components/Products/Products";
 import Discounts from "./components/Discounts/Discounts";
 import JoinUs from "./JoinUs";
+import ProductList from "../../components/ProductsList/ProductsList";
 
 function Home() {
   return (
     <div className=" max-w-[1440px] mx-auto">
       <First />
       <Products />
+      <ProductList />
       <OurServices />
       <Discounts />
       <Articles />

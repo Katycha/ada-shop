@@ -1,12 +1,14 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import { InputGroup } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import Sign from "../../assets/Sign.png";
 
 function JoinUs() {
   return (
-    <div className=" flex flex-col items-center justify-between sm:bg-[#F2F4F6]">
-      <img src={Sign} alt="" className="sm:none md:block" />
+    <div
+      style={{ "--image-url": `url(${Sign})` }}
+      className=" sm:bg-[#F3F5F7] md:bg-[image:var(--image-url)]  h-[180px]  p-4 flex flex-col items-center justify-between mb-[20px]"
+    >
       <h2 className="font-[500] text-[28px] mt-[15px]">Join Our Newsletter</h2>
       <p className="font-[400] text-[14px] mt-[15px]">
         Sign up for deals, new products and promotions
