@@ -2,7 +2,7 @@ import LivingRoom from "../../../../assets/Livingroom.png";
 import Bedroom from "../../../../assets/Bedroom.png";
 import Kitchen from "../../../../assets/Kitchen.png";
 
-function Products() {
+function Categories() {
   return (
     <div className="container mx-auto px-8 flex flex-col gap-y-4 md:flex-row md:gap-x-6 mb-12 ">
       <div
@@ -31,4 +31,4 @@ function Products() {
     </div>
   );
 }
-export default Products;
+export default Categories;

@@ -22,7 +22,7 @@ function First() {
         <h2 className="sm:flex text-4xl  w-[100%] md:flex-row justify-start ">
           Simply Unique/ <br /> Simply Better.
         </h2>
-        <p className="sm:flex text-sm font-normal text-[#6C7275] md:justify-end">
+        <p className="flex justify-center items-center sm:flex text-sm font-normal text-[#6C7275] md:justify-end">
           <span className="text-[#343839]"> 3legant </span> is a gift &
           decorations store based in HCMC, Vietnam. Est since 2019.
         </p>

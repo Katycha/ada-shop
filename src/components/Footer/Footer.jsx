@@ -5,7 +5,7 @@ import { Facebook } from "lucide-react";
 
 function Footer() {
   return (
-    <footer className="bg-[#232627] text-white flex flex-col items-center py-12 px-8 gap-y-6 md:items-stretch">
+    <footer className="bg-[#232627] text-white flex flex-col items-center py-12 px-8 gap-y-6 sm:w-[100vw] md:w-auto md:items-stretch">
       <div className="flex flex-col items-center md:flex-row md:justify-between  gap-y-10 ">
         <div className="flex flex-col gap-y-5 items-center md:flex-row md:gap-x-5">
           <h4 className="text-2xl">3legant.</h4>
