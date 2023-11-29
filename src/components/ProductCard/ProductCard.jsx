@@ -13,7 +13,7 @@ function ProductCard({ product }) {
     >
       <div className="bg-[#F3F5F7] h-[300px] bg-no-repeat bg-contain max-w-[260px] p-4 flex flex-col justify-between">
         <div>
-          <div className="flex justify-between items-center mb-3">
+          <div className="flex justify-between mb-3">
             <span className="uppercase font-bold bg-white px-3 py-1 rounded">
               new
             </span>
