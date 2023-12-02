@@ -1,6 +1,15 @@
 import { Carousel } from "react-responsive-carousel";
+import Avatar from "../../../../../assets/Avatar1.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Star, ChevronRight, Heart } from "lucide-react";
+import {
+  Star,
+  ChevronRight,
+  Heart,
+  ChevronDown,
+  ChevronUp,
+  ArrowRightCircle,
+} from "lucide-react";
+import { InputGroup, Form } from "react-bootstrap";
 
 function Slider({ product }) {
   return (
@@ -147,6 +156,229 @@ function Slider({ product }) {
             <p className="text-[12px] font-[400] text-[#141718]">
               Living Room, Bedroom
             </p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-y-10">
+          <div className="w-[311px]">
+            <div className="flex justify-between pb-2 text-[#6C7275] border-[#6C7275] border-[1px]">
+              <p>Additional Info</p>
+              <ChevronDown className="w-5 h-5" />
+            </div>
+            <div className="flex justify-between pb-2 text-[#6C7275] border-[#6C7275] border-[1px]">
+              <p>Questions</p>
+              <ChevronDown className="w-5 h-5" />
+            </div>
+            <div className="flex justify-between pb-2 text-[#141718] border-[#141718] border-[1px]">
+              <p>Reviews</p>
+              <ChevronUp className="w-5 h-5" />
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <p className="font-[500] text-[20px] text-[#23262F]">
+              Customer Reviews
+            </p>
+            <div className="flex gap-x-2 mt-6 mb-2">
+              <div className="flex gap-x-0.5 ">
+                <Star size={16} color="#343839" fill="#343839" />
+                <Star size={16} color="#343839" fill="#343839" />
+                <Star size={16} color="#343839" fill="#343839" />
+                <Star size={16} color="#343839" fill="#343839" />
+                <Star size={16} color="#343839" />
+              </div>
+              <p className="text-[12px] font-[400] text-[#141718]">
+                11 Reviews
+              </p>
+            </div>
+            <h3 className="text-[14px] font-[600] text-center mb-8">
+              {product.title}
+            </h3>
+            <div className="w-[311px] h-[62px] border-[1px] border-[#E8ECEF] rounded-[16px] flex justify-between ">
+              <InputGroup className="flex items-center text-center pl-6  py-4 ">
+                <Form.Control
+                  placeholder="Share your thoughts"
+                  aria-label="Recipient's
+              username"
+                  aria-describedby="basic-addon2"
+                />
+                <button className="cursor-pointer  text-[#6C7275] pr-4">
+                  <ArrowRightCircle
+                    color="white"
+                    fill="black"
+                    className=" flex items-end w-7 h-8 pb-0"
+                  />
+                </button>
+              </InputGroup>
+            </div>
+            <h3 className="text-[28px] font-[500] text-[#000]">11 Reviews</h3>
+            <div className="flex justify-between rounded-[8px] border-[1px] border-[#E8ECEF] mt-6 mb-10">
+              <p className="text-[16px] font-[600]">Newest</p>
+              <ChevronDown className="w-4 h-5" />
+            </div>
+            <div className="flex flex-col mb-4">
+              <div className="flex flex-row gap-x-4">
+                <img src={Avatar} alt="" className="rounded-[50%]" />
+                <div className="flex flex-col gap-x-4">
+                  <h3 className="font-[600] text-[20px] text-[#141718]">
+                    Sofia Harvetz
+                  </h3>
+                  <div className="flex gap-x-0.5 mb-6">
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-[16px] font-[400] text-[#353945] my-4">
+                I bought it 3 weeks ago and now come back just to say “Awesome
+                Product”. I really enjoy it. At vero eos et accusamus et iusto
+                odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                deleniti atque corrupt et quas molestias excepturi sint non
+                provident.
+              </p>
+              <div className="flex gap-x-4 justify-center">
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Like
+                </button>
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Reply
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-col mb-4 mt-6">
+              <div className="flex flex-row gap-x-4">
+                <img src={Avatar} alt="" className="rounded-[50%]" />
+                <div className="flex flex-col gap-x-4">
+                  <h3 className="font-[600] text-[20px] text-[#141718]">
+                    Margaret March
+                  </h3>
+                  <div className="flex gap-x-0.5 mb-6">
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-[16px] font-[400] text-[#353945] my-4">
+                I bought it 3 weeks ago and now come back just to say “Awesome
+                Product”. I really enjoy it. At vero eos et accusamus et iusto
+                odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                deleniti atque corrupt et quas molestias excepturi sint non
+                provident.
+              </p>
+              <div className="flex gap-x-4 justify-center">
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Like
+                </button>
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Reply
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-col mb-4 mt-6">
+              <div className="flex flex-row gap-x-4">
+                <img src={Avatar} alt="" className="rounded-[50%]" />
+                <div className="flex flex-col gap-x-4">
+                  <h3 className="font-[600] text-[20px] text-[#141718]">
+                    Samantha Robins
+                  </h3>
+                  <div className="flex gap-x-0.5 mb-6">
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-[16px] font-[400] text-[#353945] my-4">
+                I bought it 3 weeks ago and now come back just to say “Awesome
+                Product”. I really enjoy it. At vero eos et accusamus et iusto
+                odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                deleniti atque corrupt et quas molestias excepturi sint non
+                provident.
+              </p>
+              <div className="flex gap-x-4 justify-center">
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Like
+                </button>
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Reply
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-col mb-4 mt-6">
+              <div className="flex flex-row gap-x-4">
+                <img src={Avatar} alt="" className="rounded-[50%]" />
+                <div className="flex flex-col gap-x-4">
+                  <h3 className="font-[600] text-[20px] text-[#141718]">
+                    Jane Bennett
+                  </h3>
+                  <div className="flex gap-x-0.5 mb-6">
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-[16px] font-[400] text-[#353945] my-4">
+                I bought it 3 weeks ago and now come back just to say “Awesome
+                Product”. I really enjoy it. At vero eos et accusamus et iusto
+                odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                deleniti atque corrupt et quas molestias excepturi sint non
+                provident.
+              </p>
+              <div className="flex gap-x-4 justify-center">
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Like
+                </button>
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Reply
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-col mb-4 mt-6">
+              <div className="flex flex-row gap-x-4">
+                <img src={Avatar} alt="" className="rounded-[50%]" />
+                <div className="flex flex-col gap-x-4">
+                  <h3 className="font-[600] text-[20px] text-[#141718]">
+                    Nicolas Jensen
+                  </h3>
+                  <div className="flex gap-x-0.5 mb-6">
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                    <Star size={16} color="#343839" fill="#343839" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-[16px] font-[400] text-[#353945] my-4">
+                I bought it 3 weeks ago and now come back just to say “Awesome
+                Product”. I really enjoy it. At vero eos et accusamus et iusto
+                odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                deleniti atque corrupt et quas molestias excepturi sint non
+                provident.
+              </p>
+              <div className="flex gap-x-4 justify-center">
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Like
+                </button>
+                <button className="text-[12px] font-[600] text-[#23262F]">
+                  Reply
+                </button>
+              </div>
+            </div>
+            <div className="flex justify-center mt-6">
+              <button className=" text-[16px] h-[28px] font-[500] text-[#141718] rounded-[80px] px-10 border-[#141718] border-[1px]">
+                Load more
+              </button>
+            </div>
           </div>
         </div>
       </div>

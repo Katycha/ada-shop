@@ -4,6 +4,8 @@ import BreadCrumbs from "./components/BreadCrumbs";
 import Slider from "./components/Slider";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import JoinUs from "../../JoinUs";
+import Footer from "../../../../components/Footer/Footer";
 
 function Details() {
   const params = useParams();
@@ -38,6 +40,8 @@ function Details() {
         <div className="md:hidden">
           <Slider product={product} />
         </div>
+        <JoinUs />
+        <Footer />
       </div>
     </div>
   );
