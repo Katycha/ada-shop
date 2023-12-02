@@ -35,7 +35,9 @@ function Details() {
       <div className="container mx-auto px-8">
         <Header />
         <BreadCrumbs />
-        <Slider product={product} />
+        <div className="md:hidden">
+          <Slider product={product} />
+        </div>
       </div>
     </div>
   );
