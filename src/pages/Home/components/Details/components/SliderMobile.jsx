@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { InputGroup, Form } from "react-bootstrap";
 
-function Slider({ product }) {
+function SliderMobile({ product }) {
   return (
     <div className="container">
       <div className="card bg-[#F3F5F7]  bg-no-repeat bg-contain  p-4 flex flex-col justify-between">
@@ -20,7 +20,7 @@ function Slider({ product }) {
             new
           </span>
           <span className="bg-[#28CB89] text-white rounded px-3 py-1 font-bold w-[70px] mb-2">
-            {product.discountPercentage.toFixed(0)}%
+            -{product.discountPercentage.toFixed(0)}%
           </span>
         </div>
         <Carousel showThumbs={false} showStatus={false} showIndicators={false}>
@@ -58,7 +58,7 @@ function Slider({ product }) {
         <p className="font-[400] text-[16px] text-[#6C7275]">
           {product.description}
         </p>
-        <div className="flex flex-col gap-y-3 my-6">
+        <div className="flex flex-col gap-y-3 my-6 border-[#E8ECEF] border-t-[1px] border-b-[1px]">
           <h3 className="font-[400] text-[16px] text-[#343839]">
             Offer expires in:
           </h3>
@@ -386,4 +386,4 @@ function Slider({ product }) {
   );
 }
 
-export default Slider;
+export default SliderMobile;

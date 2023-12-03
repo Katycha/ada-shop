@@ -23,7 +23,7 @@ function ProductCard({ product }) {
           </div>
 
           <span className="bg-[#28CB89] text-white rounded px-3 py-1 font-bold">
-            -50%
+            -{product.discountPercentage.toFixed(0)}%
           </span>
         </div>
 

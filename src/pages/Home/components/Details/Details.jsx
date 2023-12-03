@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
 import Header from "../../../../components/Header/Header";
 import BreadCrumbs from "./components/BreadCrumbs";
-import Slider from "./components/Slider";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import JoinUs from "../../JoinUs";
 import Footer from "../../../../components/Footer/Footer";
+import SliderMobile from "./components/SliderMobile";
+import SliderDesctop from "./components/SliderDesctop";
 
 function Details() {
   const params = useParams();
@@ -34,11 +35,14 @@ function Details() {
   }
   return (
     <div className="max-w-[1440px] mx-auto">
-      <div className="container mx-auto px-8">
+      <div className="container sm:mx-auto px-8 md:px-0 mx-40">
         <Header />
         <BreadCrumbs />
         <div className="md:hidden">
-          <Slider product={product} />
+          <SliderMobile product={product} />
+        </div>
+        <div className=" hidden md:block">
+          <SliderDesctop product={product} />
         </div>
         <JoinUs />
         <Footer />

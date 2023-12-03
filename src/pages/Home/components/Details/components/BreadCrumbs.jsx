@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function BreadCrumbs() {
   return (
-    <div className="flex items-center text-[#605F5F] text-xs gap-x-1">
+    <div className="flex items-center text-[#605F5F] text-xs gap-x-1 md:mx-40">
       <Link>Home</Link>
       <ChevronRight size={12} />
       <Link>Shop</Link>
