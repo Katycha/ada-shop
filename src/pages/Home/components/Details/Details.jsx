@@ -35,7 +35,7 @@ function Details() {
   }
   return (
     <div className="max-w-[1440px] mx-auto">
-      <div className="container sm:mx-auto px-8 md:px-0 mx-40">
+      <div className="container mx-auto px-8">
         <Header />
         <BreadCrumbs />
         <div className="md:hidden">

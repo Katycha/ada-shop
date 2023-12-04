@@ -11,7 +11,7 @@ import { InputGroup, Form } from "react-bootstrap";
 function SliderDesctop({ product }) {
   return (
     <div className="container flex flex-col">
-      <div className="flex gap-x-[63px]">
+      <div className="flex gap-x-[60px]">
         <div className="flex flex-col mb-[67px]">
           <div className="card bg-[#F3F5F7]  bg-no-repeat bg-contain  p-4 flex flex-col justify-between">
             <div className="flex flex-col">
@@ -29,7 +29,11 @@ function SliderDesctop({ product }) {
             >
               {product.images.map((item) => (
                 <div className="overflow-hidden">
-                  <img src={item} alt="" className="" />
+                  <img
+                    src={item}
+                    alt=""
+                    className="overflow-hidden h-[500px]"
+                  />
                 </div>
               ))}
             </Carousel>
@@ -41,7 +45,7 @@ function SliderDesctop({ product }) {
           </div>
         </div>
         <div className="flex flex-col">
-          <div className="flex gap-x-[10px]">
+          <div className="flex gap-x-[10px] mb-[18px]">
             <div className="flex gap-x-0.5 ">
               <Star size={16} color="#343839" fill="#343839" />
               <Star size={16} color="#343839" fill="#343839" />
@@ -64,10 +68,10 @@ function SliderDesctop({ product }) {
             </span>
           </div>
           <h3 className="font-[500] text-[40px]">{product.title}</h3>
-          <p className="font-[400] text-[16px] text-[#6C7275]">
+          <p className="font-[400] text-[16px] text-[#6C7275] mt-4">
             {product.description}
           </p>
-          <div className="flex flex-col gap-y-3 my-6 border-[#E8ECEF] border-t-[1px] border-b-[1px]">
+          <div className="flex flex-col gap-y-3 my-6 border-[#E8ECEF] border-t-[1px] border-b-[1px] mt-6 mb-6">
             <h3 className="font-[400] text-[16px] text-[#343839]">
               Offer expires in:
             </h3>
@@ -106,7 +110,7 @@ function SliderDesctop({ product }) {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-y-2 my-6">
+          <div className="flex flex-col gap-y-2 my-6 mt-6 mb-6">
             <h3 className="text-[#6C7275] text-[16px] font-[600]">
               Measurements
             </h3>
@@ -114,7 +118,7 @@ function SliderDesctop({ product }) {
               17 1/2x20 5/8 "
             </h1>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col mt-6 mb-6">
             <div className="flex">
               <h3 className="font-[400] text-[16px] text-[#6C7275]">
                 Choose Color
@@ -139,7 +143,7 @@ function SliderDesctop({ product }) {
               </div>
             </div>
           </div>
-          <div className="flex flex-col my-6 gap-y-4 mt-4 mb-6">
+          <div className="flex flex-col my-6 gap-y-4 mt-8 mb-8">
             <div className="flex justify-between">
               <button className="bg-[#F5F5F5] rounded-[4px] text-[#121212] text-center px-2 w-[80px] cursor-pointer">
                 - 1 +

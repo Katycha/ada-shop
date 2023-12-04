@@ -55,7 +55,7 @@ function SliderMobile({ product }) {
           </span>
         </div>
         <h3 className="font-[500] text-[40px]">{product.title}</h3>
-        <p className="font-[400] text-[16px] text-[#6C7275]">
+        <p className="font-[400] text-[16px] text-[#6C7275] mt-4">
           {product.description}
         </p>
         <div className="flex flex-col gap-y-3 my-6 border-[#E8ECEF] border-t-[1px] border-b-[1px]">
